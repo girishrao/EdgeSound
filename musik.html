@@ -1,0 +1,36 @@
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>musik welcome</title> 
+
+
+<script type="text/javascript" src="scripts/soundcloud.player.api.js"></script>
+<script type="text/javascript">
+   soundcloud.addEventListener('onPlayerReady', function(player, data) {
+     player.api_play();
+   });
+</script>
+
+</head>
+
+<body bgcolor="Black">
+<object height="81" width="100%" id="yourPlayerId" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+<!--  <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fsoundcloud.com%2Fmiike%20snow%2Fdevil%27s%20work&enable_api=true&object_id=yourPlayerId"></param> -->
+  <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com/tracks/30486181/stream?client_id=c94f375c2faed927b8971c5ce89c82d6&enable_api=true&object_id=yourPlayerId"></param>
+  <param name="allowscriptaccess" value="always"></param>
+
+<!--  <embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fsoundcloud.com%2Fmiike%20snow%2Fdevil%27s%20work&enable_api=true&auto_play=true&single_active=false&object_id=yourPlayerId" type="application/x-shockwave-flash" width="100%" name="yourPlayerId"></embed>-->
+   <embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com/tracks/30486181/stream?client_id=c94f375c2faed927b8971c5ce89c82d6&enable_api=true&object_id=yourPlayerId" type="application/x-shockwave-flash" width="100%" name="yourPlayerId"></embed>
+
+
+</object>
+<object height="81" width="100%" id="yourPlayerId" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+  <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fsoundcloud.com%2Fmiike%2Fhobnotropic&enable_api=true&object_id=yourPlayerId"></param>
+  <param name="allowscriptaccess" value="always"></param>
+  <embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fsoundcloud.com%2Fmatas%2Fhobnotropic&enable_api=true&auto_play=true&single_active=true&object_id=yourPlayerId" type="application/x-shockwave-flash" width="100%" name="yourPlayerId"></embed>
+</object>
+ <p onmouseover="playSound('http://api.soundcloud.com/tracks/30486181/stream?client_id=c94f375c2faed927b8971c5ce89c82d6');">Mouse over this text to hear a sound</p>
+</body>
+</html>
+
